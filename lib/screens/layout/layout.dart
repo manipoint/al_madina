@@ -2,12 +2,12 @@
 import 'package:al_madina/routs/custom_routs.dart';
 import 'package:al_madina/routs/routs_name.dart';
 import 'package:al_madina/services/navigation_services.dart';
+import 'package:al_madina/widgets/navigation%20bar/bottom_nav.dart';
 import 'package:flutter/material.dart';
 
 import '../../locator.dart';
 
 class AppLayout extends StatelessWidget {
-  //GlobalKey<ScaffoldState> _key = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
      GlobalKey<ScaffoldState> _key = GlobalKey<ScaffoldState>();
@@ -16,7 +16,6 @@ class AppLayout extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Row(
         children: [
-           //SideMenu(),
           Expanded(
             child: Column(
               children: [
@@ -31,6 +30,10 @@ class AppLayout extends StatelessWidget {
             ),
           )
         ],
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.only(bottom:12.0),
+        child: CustomNavBar(),
       ),
     );
   }

@@ -1,5 +1,5 @@
-import 'package:al_madina/screens/modes/landscape.dart';
-import 'package:al_madina/screens/modes/potrait.dart';
+import 'package:al_madina/screens/layout/modes/landscape.dart';
+import 'package:al_madina/screens/layout/modes/potrait.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
